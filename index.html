@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Images basic</title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		.gallery {
+			width: 600px;
+		}
+		@media screen and (max-width: 800px) {
+			.gallery {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+<img src="https://tom.imgix.net/api/films/r1.png" srcset="https://tom.imgix.net/api/films/r1.png?w=400 1x, https://tom.imgix.net/api/films/r1.png?w=400&dpr=2 2x, https://tom.imgix.net/api/films/r1.png?w=400&dpr=3 3x">
+<img class="gallery" src="https://tom.imgix.net/api/films/r1.png" srcset="https://tom.imgix.net/api/films/r1.png?w=600 600w, https://tom.imgix.net/api/films/r1.png?w=1200 1200w, https://tom.imgix.net/api/films/r1.png?w=1500 1500w, https://tom.imgix.net/api/films/r1.png?w=1800 1800w">
+</body>
+</html>
